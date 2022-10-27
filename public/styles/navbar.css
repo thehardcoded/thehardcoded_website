@@ -1,0 +1,118 @@
+nav {
+  position: sticky;
+  top: 0;
+  border-radius: 10px;
+  box-shadow: rgb(0 0 0 / 15%) 0px 2px 4px 0px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  background-color: #00283a;
+  z-index: 3;
+}
+.openmenu {
+  display: none;
+  position: absolute;
+  left: 5%;
+  top: 30%;
+  font-size: 2em;
+  color: #dedee0;
+}
+.closemenu {
+  display: none;
+  position: absolute;
+  left: 5%;
+  top: 30%;
+  font-size: 2em;
+  color: #dedee0;
+}
+
+.navbar {
+  width: 50%;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navanchor {
+  display: inline-block;
+  color: #dedee0;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 2px;
+  font-weight: 700;
+  font-size: 11.75px;
+  line-height: 80px;
+  height: 100%;
+  width: 100%;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.4s ease-in-out;
+}
+.navanchor:hover {
+  color: var(--nac, #ed7014);
+}
+.anavdiv {
+  position: relative;
+  padding: 0 20px;
+}
+.active::before {
+  content: "";
+  position: absolute;
+  border-radius: 10px;
+  height: 4px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: var(--bbc, #ed7014);
+  transition: 0.4s ease-in-out;
+}
+
+.hardcoded {
+  width: 20%;
+  position: absolute;
+  left: 0;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  color: #dedee0;
+  font-family: "Inter", sans-serif;
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.coded {
+  color: #ed7014;
+}
+nav::after {
+  content: "";
+  bottom: -8px;
+  position: absolute;
+  left: 30px;
+  height: 8px;
+  width: calc(100% - 60px);
+  border-radius: 0 0 5px 5px;
+  background-color: #00283a;
+  opacity: 0.3;
+}
+
+/* mobile responsive */
+@media only screen and (max-width: 860px) {
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    flex-direction: column;
+    height: auto;
+    background-color: #00283a;
+    opacity: 0.9;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: rgb(0 0 0 / 25%) 0px 2px 4px 0px;
+    z-index: 0;
+  }
+  .hardcoded {
+    width: 100%;
+  }
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hardcoded</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <script src="https://kit.fontawesome.com/4fb9d56898.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+
+    <div id="preloader">
+        <video class="video1" loop autoplay muted>
+            <source src="images/index_images/preloader.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div id="home_page">
+        <div class="card">
+            <%- include('partials/navbar')%>
+                <div class="main_section">
+                    <div class="main_content">
+                        <div class="section1">
+                            <div class="imagediv fade">
+                                <img class="image" src="images/index_images/1.jpg" alt="">
+                                <h2 class="imagetext">Explore the future!</h2>
+                                <h1 class="imagetitle">Electric vehicle</h1>
+                            </div>
+                            <div class="imagediv fade"><img class="image" src="images/index_images/2.jpg" alt="">
+                                <h2 class="imagetext">Explore the future!</h2>
+                                <h1 class="imagetitle">Robotic force</h1>
+                            </div>
+                            <div class="imagediv fade"><img class="image" src="images/index_images/3.jpg" alt="">
+                                <h2 class="imagetext">Explore the future!</h2>
+                                <h1 class="imagetitle">quantum computing</h1>
+                            </div>
+
+                            <div class="imagediv fade"><img class="image" src="images/index_images/4.jpg" alt="">
+                                <h2 class="imagetext">Explore every field of technology! </h2>
+                                <h1 class="imagetitle">AEROSPACE</h1>
+                            </div>
+                            <div class="imagediv fade"><img class="image" src="images/index_images/5.jpg" alt="">
+                                <h2 class="imagetext">Explore every field of technology!</h2>
+                                <h1 class="imagetitle">INDUSTRIAL ROBOTICS</h1>
+                            </div>
+                            <div class="imagediv fade"><img class="image" src="images/index_images/6.jpg" alt="">
+                                <h2 class="imagetext">Explore the 'HELLO WORLD' !</h2>
+                                <h1 class="imagetitle">Computer programming</h1>
+                            </div>
+                            <div class="imagediv fade"><img class="image" src="images/index_images/7.jpg" alt="">
+                                <h2 class="imagetext">Explore every field of technology!</h2>
+                                <h1 class="imagetitle">electrical electronics</h1>
+                            </div>
+
+                            <div class="imagediv fade"><img class="image" src="images/index_images/8.jpg" alt="">
+                                <h2 class="imagetext">Explore every field of technology!</h2>
+                                <h1 class="imagetitle">applied physics/ mathematics</h1>
+                            </div>
+
+                            <div class="dotdiv">
+                                <span class="dot" onclick="currentSlide(1)"></span>
+                                <span class="dot" onclick="currentSlide(2)"></span>
+                                <span class="dot" onclick="currentSlide(3)"></span>
+                                <span class="dot" onclick="currentSlide(4)"></span>
+                                <span class="dot" onclick="currentSlide(5)"></span>
+                                <span class="dot" onclick="currentSlide(6)"></span>
+                                <span class="dot" onclick="currentSlide(7)"></span>
+                                <span class="dot" onclick="currentSlide(8)"></span>
+                            </div>
+
+                        </div>
+                        <div class="profilecard profilereveal">
+                            <div class="profilepicturediv">
+                                <img class="profilepicture" src="images/index_images/profilepicture.jpeg" alt="">
+                            </div>
+                            <div class="name">Shubham Sharma</div>
+                            <div class="designation">i'm <span class="designation autotype"></span></div>
+                            <div class="social">
+                                <a class="sociallink" href="https://twitter.com/the_hardcoded" target="_blank"
+                                    title="Twitter">
+                                    <i class="fab fa-twitter"></i> </a>
+                                <a class="sociallink" href="https://www.youtube.com/channel/UCvs_30UFxyS4iJbhi5IZUCw"
+                                    target="_blank" title="Youtube">
+                                    <i class="fab fa-youtube"></i> </a>
+                                <a class="sociallink" href="https://www.instagram.com/thehardcoded/" target="_blank"
+                                    title="Instagram">
+                                    <i class="fab fa-instagram"></i> </a>
+                                <a class="sociallink" href="https://github.com/hardc0d3d" target="_blank"
+                                    title="GitHub">
+                                    <i class="fab fa-github"></i> </a>
+                                <a class="sociallink" href="https://www.linkedin.com/in/shubham-sharma-05200a203/"
+                                    target="_blank" title="Linkedin">
+                                    <i class="fab fa-linkedin"></i> </a>
+                            </div>
+                            <div class="address">
+                                <div>Residence:<span>India</span></div>
+                                <div>city:<span>greater noida</span></div>
+                                <div>age:<span>20</span></div>
+                            </div>
+                        </div>
+                        <div class="section2">
+                            <div class="myline reveal">
+                                <div class="line"> Explore whatever you want
+                                    Create Better & Learn !
+                                    it's all about future</div>
+                                <div class="end">//</div>
+                            </div>
+                            <div class="knowledge">
+                                <div>Knowledge<span></span></div>
+                                <div class="knowledgecontent reveal">
+                                    <div>
+                                        <div>
+                                            <ul>
+                                                <li>C</li>
+                                                <li>Python</li>
+                                                <li>Data structures / Alogrithms</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <ul>
+                                                <li>Html / Css / JavaScript</li>
+                                                <li>Node Js / Express</li>
+                                                <li>SQL / MongoDB</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <ul>
+                                                <li>Machine Learning</li>
+                                                <li>Deep Learning</li>
+                                                <li>IOT</li>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <ul>
+                                                <li>Photoshop</li>
+                                                <li>Premier Pro </li>
+                                                <li>After Effect</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="latestpublication">
+                                <div>Latest Publications<span></span></div>
+                                <div class="latestpublicationcontent">
+                                    <% latestblog.forEach(blog=> { %>
+                                        <div class="lpcard reveal">
+                                            <div class="lplink">
+                                                <a href="/blog/<%=blog.data.metatitle%>">
+                                                    <div class="lpimage">
+                                                        <img src="<%=blog.data.mainimage%>"
+                                                            alt="<%=blog.data.altimagetext%>">
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                            <h2 class="lpcategory">
+                                                <%=blog.data.categories%>
+                                            </h2>
+                                            <a href="/blog/<%=blog.data.metatitle%>" class="lpdescriptionlink">
+                                                <h1 class="lpdescription">
+                                                    <%=blog.data.title%>
+                                                </h1>
+                                            </a>
+
+                                            <div class="lpdate_author">
+                                                <p class="date">
+                                                    <%=blog.data.date%>
+                                                </p>
+                                                <p class="author">
+                                                    <%=blog.data.author%>
+                                                </p>
+                                            </div>
+
+                                        </div>
+                                        <% }) %>
+                                </div>
+                            </div>
+                            <div class="endboundary">
+                                <%- include('partials/footer')%>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <script src="/scripts/index.js"></script>
+    <script src="/scripts/navbar.js"></script>
+
+
+</body>
+
+</html>

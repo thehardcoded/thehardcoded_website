@@ -1,0 +1,141 @@
+/* Basic Structure */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #00151f;
+  overflow: hidden;
+  font-family: "Inter", sans-serif;
+}
+html {
+  overflow: visible;
+}
+#blogs_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  background-color: #02162b;
+  width: 98.5%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  margin-top: 1%;
+}
+.main_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main_content {
+    height: 83vh;
+    width: 93%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    overscroll-behavior: contain;
+}
+.main_content::-webkit-scrollbar {
+    width: 0 !important;
+}
+/* content */ 
+.blog_section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.lpcard {
+  position: relative;
+  width: 26%;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px -2px rgb(0 0 0 / 60%);
+  background-color: #00283a;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top:1.5em;
+}
+.lpcard::before {
+  content: "";
+  position: absolute;
+  left: 30px;
+  top: -8px;
+  height: 8px;
+  width: calc(100% - 60px);
+  background-color: white;
+  border-radius: 5px 5px 0 0;
+  opacity: 0.1;
+}
+.lpimage img {
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.lpcategory {
+  width: 85%;
+  margin-top: 5%;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-size: 0.72em;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #dedee0;
+  opacity: 0.6;
+}
+.lpdescriptionlink {
+  display: flex;
+  width: 85%;
+  text-decoration: none;
+  color: #dedee0;
+  border-bottom: 2px dotted rgba(225, 225, 235, 0.15);
+  padding-bottom: 3%;
+  margin-top: 5%;
+}
+.lpdescription{
+  font-weight: 800;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  letter-spacing: 0.03em;
+}
+.lpdate_author {
+  display: flex;
+  width: 85%;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.date,
+.author {
+  font-size: 0.7em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #dedee0;
+  opacity: 0.6;
+  text-transform: uppercase;
+  display:block;
+  margin-top: 0;
+  margin-bottom: 0;
+
+}
+.author{
+  margin-left: 2px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .lpcard{
+    width:42%;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .lpcard{
+    width: 100%;
+  }
+}
